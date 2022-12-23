@@ -832,7 +832,7 @@ body {
   left: 0;
   border-radius: 50%;
   top: 50%;
-  margin-top: -8.5008px;
+  transform: translateY(-50%);
 }
 .backup-manager .radio-box-task input[type="radio"] + label::after {
   content: "";
@@ -840,7 +840,7 @@ body {
   width: 11px;
   aspect-ratio: 1 / 1;
   left: 5px;
-  top: 5.5008px;
+  top: 6px;
   background-color: var(--blue-color);
   border-radius: 50%;
   transform: scale(0);
