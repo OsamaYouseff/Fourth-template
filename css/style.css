@@ -471,55 +471,55 @@ body {
 
 /* start remainders  */
 
-NaNpxainders ul li .key,
-NaNpxainders ul li .move {
+.remainders ul li .key,
+.remainders ul li .move {
   width: 0.9375rem;
   height: 0.9375rem;
   transition: calc(var(--transition) * 2);
 }
-NaNpxainders ul li:hover .key {
+.remainders ul li:hover .key {
   border-radius: 0;
   width: 0.9375rem;
   transform: scale(1.05);
 }
-NaNpxainders ul li .move {
+.remainders ul li .move {
   z-index: -1;
   border: 0.625rem solid transparent;
   transition: calc(var(--transition) * 1.2);
 }
-NaNpxainders ul li:hover .move {
+.remainders ul li:hover .move {
   z-index: 1;
   width: 0;
   border-color: transparent transparent transparent var(--blue-color);
   transform: translateX(0.9375rem) scale(1.05);
 }
 
-NaNpxainders ul li:hover .move.green,
-NaNpxainders ul li:hover .move.orange,
-NaNpxainders ul li:hover .move.red {
+.remainders ul li:hover .move.green,
+.remainders ul li:hover .move.orange,
+.remainders ul li:hover .move.red {
   border: 0.625rem solid transparent;
 }
 
-NaNpxainders ul li:hover .move.green {
+.remainders ul li:hover .move.green {
   border-color: transparent transparent transparent var(--green-color);
 }
-NaNpxainders ul li:hover .move.orange {
+.remainders ul li:hover .move.orange {
   border-color: transparent transparent transparent var(--orange-color);
 }
-NaNpxainders ul li:hover .move.red {
+.remainders ul li:hover .move.red {
   border-color: transparent transparent transparent var(--red-color);
 }
 
-NaNpxainders ul li > .blue {
+.remainders ul li > .blue {
   border-left: 0.125rem solid var(--blue-color);
 }
-NaNpxainders ul li > .green {
+.remainders ul li > .green {
   border-left: 0.125rem solid var(--green-color);
 }
-NaNpxainders ul li > .orange {
+.remainders ul li > .orange {
   border-left: 0.125rem solid var(--orange-color);
 }
-NaNpxainders ul li > .red {
+.remainders ul li > .red {
   border-left: 0.125rem solid var(--red-color);
 }
 /* end remainders  */
@@ -1240,10 +1240,9 @@ NaNpxainders ul li > .red {
 }
 /* end courses-page */
 
-
 /* start files-page */
 
-@media (max-width:767px) {
+@media (max-width: 767px) {
   .files-page {
     flex-direction: column-reverse;
   }
@@ -1271,45 +1270,45 @@ NaNpxainders ul li > .red {
   min-width: 260px;
   max-width: 260px;
   height: fit-content;
-  margin-inline:auto ;
+  margin-inline: auto;
 }
 @media (max-width: 767px) {
   .files-page .files-statistics {
     min-width: 100%;
     max-width: 290px;
+  }
+  .files-page .files-statistics h2 {
+    letter-spacing: -2px;
+  }
 }
-.files-page .files-statistics h2 {
-  letter-spacing: -2px;
+.files-page .files-statistics div {
+  border: 1.5px solid #eee;
 }
-}
-.files-page .files-statistics div   {
-  border: 1.5px solid #eee; 
-}
-.files-page .files-statistics div i  {
+.files-page .files-statistics div i {
   width: 40px;
   aspect-ratio: 1 / 1;
   border-radius: 3px;
 }
-.files-page .files-statistics div .blue  {
+.files-page .files-statistics div .blue {
   background-color: rgb(0 117 255 / 20%);
 }
-.files-page .files-statistics div .green  {
+.files-page .files-statistics div .green {
   background-color: #d3f3df;
 }
-.files-page .files-statistics div .red  {
+.files-page .files-statistics div .red {
   background-color: rgb(244 67 54 / 20%);
 }
-.files-page .files-statistics div .orange  {
+.files-page .files-statistics div .orange {
   background-color: rgb(245 158 11 / 20%);
 }
 
 .files-page .files-statistics > a {
   padding: 10px 15px;
 }
-.files-page .files-statistics > a  {
+.files-page .files-statistics > a {
   transition: var(--transition);
 }
-.files-page .files-statistics > a:hover  {
+.files-page .files-statistics > a:hover {
   background-color: var(--blue-alt-color);
 }
 .files-page .files-statistics > a i {
@@ -1317,12 +1316,11 @@ NaNpxainders ul li > .red {
   transition: var(--transition);
 }
 .files-page .files-statistics > a:hover i {
-  animation: bounding 0.45s infinite ease-in-out alternate ;
+  animation: bounding 0.45s infinite ease-in-out alternate;
   animation-play-state: running;
   background-color: var(--blue-alt-color);
 }
 /* end files-page */
-
 
 /* start plans-page */
 .plans-page {
@@ -1362,10 +1360,10 @@ NaNpxainders ul li > .red {
   align-items: center;
 }
 
-.plans-page .plan-card .features li:not(.yes, .help )  {
+.plans-page .plan-card .features li:not(.yes, .help) {
   color: var(--red-color);
 }
-.plans-page .plan-card .features li i  {
+.plans-page .plan-card .features li i {
   margin-right: 10px;
   display: block;
   font-size: 18px;
@@ -1383,7 +1381,6 @@ NaNpxainders ul li > .red {
 }
 
 /* end plans-page */
-
 
 /* start animation  */
 @keyframes change-color {
