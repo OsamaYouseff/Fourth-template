@@ -18,93 +18,104 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Dashboard with osama</title>
+    <title>Dashboard template four</title>
   </head>
   <body>
     <!-- start page -->
     <div class="page d-flex">
       <!-- start sidebar -->
       <div class="side-bar bg-white p-relative p-20">
-        <h3 class="p-relative p-20 txt-c mt-0">Osama</h3>
-        <ul>
-          <li>
-            <a
-              hre="#index.html"
-              class="active c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-chart-bar fa-fw"></i>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="settings.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-solid fa-gear fa-fw"></i>
-              <span>Settings</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="profile.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-user fa-fw"></i>
-              <span>Profile</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="projects.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-solid fa-diagram-project fa-fw"></i>
-              <span>Projects</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="courses.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-solid fa-graduation-cap fa-fw"></i>
-              <span>Courses</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="friends.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-circle-user fa-fw"></i>
-              <span>Friends</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="files.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-file fa-fw"></i>
-              <span> Files</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="plans.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-credit-card fa-fw"></i>
-              <span> Plans</span>
-            </a>
-          </li>
-        </ul>
+        <div class="wrapper">
+          <h3 class="p-relative p-20 txt-c mt-0">Osama</h3>
+          <ul>
+            <li>
+              <a
+                href="#index.html"
+                class="active c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-chart-bar fa-fw"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="settings.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="profile.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-solid fa-diagram-project fa-fw"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="courses.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                <span>Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="friends.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-circle-user fa-fw"></i>
+                <span>Friends</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="files.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-file fa-fw"></i>
+                <span> Files</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="plans.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-credit-card fa-fw"></i>
+                <span> Plans</span>
+              </a>
+            </li>
+          </ul>
+          <div class="main-switch">
+            <span>Dark</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider" id="slider"></span>
+            </label>
+            <span>Light</span>
+          </div>
+        </div>
       </div>
       <!-- end sidebar -->
       <!-- start content -->
       <div class="content w-full">
         <!-- start head -->
+
         <div class="head between-flex p-15 bg-white">
           <div class="search p-relative">
             <input
@@ -114,6 +125,9 @@
             />
           </div>
           <div class="icons d-flex align-center">
+            <!-- <div id="toggle">
+              <i class="fa-solid fa-moon"></i>
+            </div> -->
             <span class="notification p-relative">
               <i class="fa-regular fa-bell fa-lg"></i>
             </span>
@@ -125,10 +139,10 @@
         <div class="wrapper d-grid gap-20">
           <!-- start welcome -->
           <div class="welcome txt-c-mobile block-mobile rad-10 bg-white">
-            <div class="info d-flex space-between bg-eee p-20">
+            <div class="info d-flex space-between bg-f6f6f6 p-20">
               <div>
                 <h2 class="m-0">Welcome</h2>
-                <p class="mt-5 c-grey">OSama</p>
+                <p class="mt-5 c-grey">Osama</p>
               </div>
               <img src="images/welcome.png" class="hide-mobile" alt="welcome" />
             </div>
@@ -186,9 +200,9 @@
               <div class="details align-center">
                 <span class="d-block fs-14 mb-5 c-grey"> Money </span>
                 <span class="d-block mt-5 mb-10 fs-14 fw-bold"> $20.000 </span>
-                <div class="progress-bar p-relative">
-                  <span class="blue bg-blue d-block" style="width: 80%">
-                    <span class="bg-blue">80%</span>
+                <div class="progress-bar p-relative" data-width="80%">
+                  <span class="blue bg-blue d-block" style="width: 0%">
+                    <span class="bg-blue">0%</span>
                   </span>
                 </div>
               </div>
@@ -200,9 +214,9 @@
               <div class="details align-center">
                 <span class="d-block fs-14 mb-5 c-grey"> projects </span>
                 <span class="d-block mt-5 mb-10 fs-14 fw-bold"> $20.000 </span>
-                <div class="progress-bar p-relative">
-                  <span class="orange bg-orange d-block" style="width: 50%">
-                    <span class="bg-orange">50%</span>
+                <div class="progress-bar p-relative" data-width="50%">
+                  <span class="orange bg-orange d-block" style="width: 0%">
+                    <span class="bg-orange">0%</span>
                   </span>
                 </div>
               </div>
@@ -212,11 +226,11 @@
                 <i class="fa-solid fa-user fa-lg c-green"></i>
               </div>
               <div class="details align-center">
-                <span class="d-block fs-14 mb-5 c-grey"> Team </span>
+                <span class="d-block fs-14 mb-5 c-grey"> Teams </span>
                 <span class="d-block mt-5 mb-10 fs-14 fw-bold"> 12 </span>
-                <div class="progress-bar p-relative">
-                  <span class="green bg-green d-block" style="width: 65%">
-                    <span class="bg-green">65%</span>
+                <div class="progress-bar p-relative" data-width="65%">
+                  <span class="green bg-green d-block" style="width: 0%">
+                    <span class="bg-green">0%</span>
                   </span>
                 </div>
               </div>
@@ -234,22 +248,38 @@
                 <i
                   class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"
                 ></i>
-                <span class="d-block c-black fw-bold fs-25 mb-5">2500</span>
+                <span
+                  class="d-block c-black fw-bold fs-25 mb-5"
+                  data-count="1500"
+                  >0</span
+                >
                 Total
               </div>
               <div class="box p-20 rad-10 fs-13 c-grey">
                 <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
-                <span class="d-block c-black fw-bold fs-25 mb-5">500</span>
+                <span
+                  class="d-block c-black fw-bold fs-25 mb-5"
+                  data-count="500"
+                  >0</span
+                >
                 Pending
               </div>
               <div class="box p-20 rad-10 fs-13 c-grey">
                 <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
-                <span class="d-block c-black fw-bold fs-25 mb-5">1900</span>
+                <span
+                  class="d-block c-black fw-bold fs-25 mb-5"
+                  data-count="900"
+                  >0</span
+                >
                 Closed
               </div>
               <div class="box p-20 rad-10 fs-13 c-grey">
                 <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
-                <span class="d-block c-black fw-bold fs-25 mb-5">100</span>
+                <span
+                  class="d-block c-black fw-bold fs-25 mb-5"
+                  data-count="100"
+                  >0</span
+                >
                 Deleted
               </div>
             </div>
@@ -347,7 +377,7 @@
             <h2 class="mt-0 mb-20">Top Search Items</h2>
             <div class="head-search between-flex c-grey fs-15 mb-10">
               <div>Keyword</div>
-              <div>Search Count</div>
+              <div>Search data-count</div>
             </div>
             <div class="search-item between-flex pt-15 pb-15">
               <span>Programming</span>
@@ -469,7 +499,7 @@
                 <span class="mr-15 rad-half bg-blue d-block key"></span>
                 <span class="p-absolute move"></span>
                 <div class="pl-15 blue">
-                  <p class="fw-bold mt-0 mb-5 fs-15">Check My Tasks List</p>
+                  <p class="fw-bold mt-0 fs-15">Check My Tasks List</p>
                   <span class="block c-grey fs-13"> 28/09/2022 - 12:00am </span>
                 </div>
               </li>
@@ -477,7 +507,7 @@
                 <span class="mr-15 rad-half bg-green d-block key"></span>
                 <span class="p-absolute move green"></span>
                 <div class="pl-15 green">
-                  <p class="fw-bold mt-0 mb-5 fs-15">Check My Projects</p>
+                  <p class="fw-bold mt-0 fs-15">Check My Projects</p>
                   <span class="block c-grey fs-13"> 26/10/2022 - 12:00am </span>
                 </div>
               </li>
@@ -485,7 +515,7 @@
                 <span class="mr-15 rad-half bg-orange d-block key"></span>
                 <span class="p-absolute move orange"></span>
                 <div class="pl-15 orange">
-                  <p class="fw-bold mt-0 mb-5 fs-15">Call All My Clients</p>
+                  <p class="fw-bold mt-0 fs-15">Call All My Clients</p>
                   <span class="block c-grey fs-13"> 05/11/2022 - 12:00am </span>
                 </div>
               </li>
@@ -493,7 +523,9 @@
                 <span class="mr-15 rad-half bg-red d-block key"></span>
                 <span class="p-absolute move red"></span>
                 <div class="pl-15 red">
-                  <p class="fw-bold mt-0 mb-5 fs-15">Finish The Development Workshop</p>
+                  <p class="fw-bold mt-0 fs-15">
+                    Finish The Development Workshop
+                  </p>
                   <span class="block c-grey fs-13"> 20/12/2022 - 12:00am</span>
                 </div>
               </li>
@@ -501,7 +533,7 @@
           </div>
           <!-- end remainders -->
           <!-- start latest posts -->
-          <div class="latest-posts p-20 bg-white rad-10 p-relative ">
+          <div class="latest-posts p-20 bg-white rad-10 p-relative">
             <h2 class="mt-0 mb-20">Latest Post</h2>
             <div class="info d-flex align-center mt-10 mb-10">
               <img class="avatar mr-15" src="images/avatar.png" alt="" />
@@ -510,7 +542,9 @@
                 <p class="fs-13 c-grey">About 3 Hours Ago</p>
               </div>
             </div>
-            <div class="post-content txt-c-mobile fs-14  mt-25 mb-25 pt-20 pb-20">
+            <div
+              class="post-content txt-c-mobile fs-14 mt-25 mb-25 pt-20 pb-20"
+            >
               You Can Fool All Of The People Some Of The Time, And Some Of The
               People All Of The Time, But You Can't Fool All Of The People All
               Of The Time.
@@ -530,34 +564,42 @@
           <!-- start Social Media Stats -->
           <div class="social-media p-20 bg-white rad-10 p-relative">
             <h2 class="mt-0 mb-20">Social Media Stats</h2>
-            <div class="box-social twitter between-flex p-15 mb-10 p-relative  ">
-                <i class="fa-brands fa-twitter fa-2x c-white h-full center-flex"></i>
-              <span class="fw-bold ">90K Followers</span>
-              <a class="btn btn-shape fs-13 c-white href ="#">Follow</a>
+            <div class="box-social twitter between-flex p-15 mb-10 p-relative">
+              <i
+                class="social-icon fa-brands fa-twitter fa-2x h-full center-flex"
+              ></i>
+              <span class="fw-bold">90K Followers</span>
+              <a class="btn btn-shape fs-13" href="#">Follow</a>
             </div>
-            <div class="box-social facebook between-flex p-15 mb-10 p-relative  ">
-              <i class="fa-brands fa-facebook-f fa-2x c-white h-full center-flex"></i>
-              <span class="fw-bold ">2M Like</span>
-              <a class="btn btn-shape fs-13 c-white href ="#">Like</a>
+            <div class="box-social facebook between-flex p-15 mb-10 p-relative">
+              <i
+                class="social-icon fa-brands fa-facebook-f fa-2x h-full center-flex"
+              ></i>
+              <span class="fw-bold">2M Like</span>
+              <a class="btn btn-shape fs-13" href="#">Like</a>
             </div>
-            <div class="box-social youtube between-flex p-15 mb-10 p-relative  ">
-              <i class="fa-brands fa-youtube fa-2x c-white h-full center-flex"></i>
-              <span class="fw-bold ">1M Subs</span>
-              <a class="btn btn-shape fs-13 c-white href ="#">Subscribe</a>
+            <div class="box-social youtube between-flex p-15 mb-10 p-relative">
+              <i
+                class="social-icon fa-brands fa-youtube fa-2x h-full center-flex"
+              ></i>
+              <span class="fw-bold">1M Subs</span>
+              <a class="btn btn-shape fs-13" href="#">Subscribe</a>
             </div>
-            <div class="box-social linkedin between-flex p-15 mb-10 p-relative  ">
-              <i class="fa-brands fa-linkedin fa-2x c-white h-full center-flex"></i>
-              <span class="fw-bold ">70K Followers</span>
-              <a class="btn btn-shape fs-13 c-white href ="#">Follow</a>
+            <div class="box-social linkedin between-flex p-15 mb-10 p-relative">
+              <i
+                class="social-icon fa-brands fa-linkedin fa-2x h-full center-flex"
+              ></i>
+              <span class="fw-bold">70K Followers</span>
+              <a class="btn btn-shape fs-13" href="#">Follow</a>
             </div>
           </div>
           <!-- end Social Media Stats -->
         </div>
         <!-- start projects table -->
-        <div class="projects p-20 bg-white rad-10  ">
+        <div class="projects p-20 m-20 bg-white rad-10">
           <h2 class="mt-0 mb-20">Projects</h2>
-          <div class="responsive-table ">
-            <table class="fs-15 w-full " >
+          <div class="responsive-table">
+            <table class="fs-15 w-full">
               <thead>
                 <tr>
                   <td>Name</td>
@@ -575,13 +617,15 @@
                   <td>Ministry</td>
                   <td>$5300</td>
                   <td>
-                    <img src="images/team-01.png" alt="">
-                    <img src="images/team-02.png" alt="">
-                    <img src="images/team-03.png" alt="">
-                    <img src="images/team-05.png" alt="">
+                    <img src="images/team-01.png" alt="" />
+                    <img src="images/team-02.png" alt="" />
+                    <img src="images/team-03.png" alt="" />
+                    <img src="images/team-05.png" alt="" />
                   </td>
                   <td>
-                    <span class="label btn-shape bg-orange c-white">Pending</span>
+                    <span class="label btn-shape bg-orange c-white"
+                      >Pending</span
+                    >
                   </td>
                 </tr>
                 <tr>
@@ -590,11 +634,15 @@
                   <td>Elzero Company</td>
                   <td>$1500</td>
                   <td>
-                    <img src="images/team-01.png" alt="">
-                    <img src="images/team-02.png" alt="">
-                    <img src="images/team-05.png" alt="">
+                    <img src="images/team-01.png" alt="" />
+                    <img src="images/team-02.png" alt="" />
+                    <img src="images/team-05.png" alt="" />
                   </td>
-                  <td><span class="label btn-shape bg-blue c-white">In Progress</span></td>
+                  <td>
+                    <span class="label btn-shape bg-blue c-white"
+                      >In Progress</span
+                    >
+                  </td>
                 </tr>
                 <tr>
                   <td>Bouba App</td>
@@ -602,10 +650,14 @@
                   <td>Bouba</td>
                   <td>$800</td>
                   <td>
-                    <img src="images/team-02.png" alt="">
-                    <img src="images/team-03.png" alt="">
+                    <img src="images/team-02.png" alt="" />
+                    <img src="images/team-03.png" alt="" />
                   </td>
-                  <td><span class="label btn-shape bg-green c-white">Completed</span></td>
+                  <td>
+                    <span class="label btn-shape bg-green c-white"
+                      >Completed</span
+                    >
+                  </td>
                 </tr>
                 <tr>
                   <td>Mahmoud Website</td>
@@ -613,10 +665,14 @@
                   <td>Mahmoud</td>
                   <td>$600</td>
                   <td>
-                    <img src="images/team-01.png" alt="">
-                    <img src="images/team-02.png" alt="">
+                    <img src="images/team-01.png" alt="" />
+                    <img src="images/team-02.png" alt="" />
                   </td>
-                  <td><span class="label btn-shape bg-green c-white">Completed</span></td>
+                  <td>
+                    <span class="label btn-shape bg-green c-white"
+                      >Completed</span
+                    >
+                  </td>
                 </tr>
                 <tr>
                   <td>Sayed Website</td>
@@ -624,10 +680,12 @@
                   <td>Sayed</td>
                   <td>$300</td>
                   <td>
-                    <img src="images/team-01.png" alt="">
-                    <img src="images/team-03.png" alt="">
+                    <img src="images/team-01.png" alt="" />
+                    <img src="images/team-03.png" alt="" />
                   </td>
-                  <td><span class="label btn-shape bg-red c-white">Rejected</span></td>
+                  <td>
+                    <span class="label btn-shape bg-red c-white">Rejected</span>
+                  </td>
                 </tr>
                 <tr>
                   <td>Arena Application</td>
@@ -635,12 +693,16 @@
                   <td>Arena Company</td>
                   <td>$2600</td>
                   <td>
-                    <img src="images/team-01.png" alt="">
-                    <img src="images/team-02.png" alt="">
-                    <img src="images/team-03.png" alt="">
-                    <img src="images/team-04.png" alt="">
+                    <img src="images/team-01.png" alt="" />
+                    <img src="images/team-02.png" alt="" />
+                    <img src="images/team-03.png" alt="" />
+                    <img src="images/team-04.png" alt="" />
                   </td>
-                  <td><span class="label btn-shape bg-green c-white">Completed</span></td>
+                  <td>
+                    <span class="label btn-shape bg-green c-white"
+                      >Completed</span
+                    >
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -651,5 +713,6 @@
     </div>
     <!-- end content -->
     <!-- end page -->
+    <script src="main.js"></script>
   </body>
 </html>

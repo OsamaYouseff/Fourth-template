@@ -18,88 +18,98 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Profile </title>
+    <title>Profile</title>
   </head>
   <body>
     <!-- start page -->
     <div class="page d-flex">
       <!-- start sidebar -->
       <div class="side-bar bg-white p-relative p-20">
-        <h3 class="p-relative p-20 txt-c mt-0">Osama</h3>
-        <ul>
-          <li>
-            <a
-              href="index.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-chart-bar fa-fw"></i>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="settings.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-solid fa-gear fa-fw"></i>
-              <span>Settings</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="profile.html"
-              class="active c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-user fa-fw"></i>
-              <span>Profile</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="projects.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-solid fa-diagram-project fa-fw"></i>
-              <span>Projects</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="courses.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-solid fa-graduation-cap fa-fw"></i>
-              <span>Courses</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="friends.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-circle-user fa-fw"></i>
-              <span>Friends</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="files.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-file fa-fw"></i>
-              <span> Files</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="plans.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-credit-card fa-fw"></i>
-              <span> Plans</span>
-            </a>
-          </li>
-        </ul>
+        <div class="wrapper">
+          <h3 class="p-relative p-20 txt-c mt-0">Osama</h3>
+          <ul>
+            <li>
+              <a
+                href="index.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-chart-bar fa-fw"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="settings.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="profile.html"
+                class="active c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-solid fa-diagram-project fa-fw"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="courses.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                <span>Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="friends.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-circle-user fa-fw"></i>
+                <span>Friends</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="files.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-file fa-fw"></i>
+                <span> Files</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="plans.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-credit-card fa-fw"></i>
+                <span> Plans</span>
+              </a>
+            </li>
+          </ul>
+          <div class="main-switch">
+            <span>Dark</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider" id="slider"></span>
+            </label>
+            <span>Light</span>
+          </div>
+        </div>
       </div>
       <!-- end sidebar -->
       <!-- start content -->
@@ -114,6 +124,9 @@
             />
           </div>
           <div class="icons d-flex align-center">
+            <!-- <div id="toggle">
+              <i class="fa-solid fa-moon"></i>
+            </div> -->
             <span class="notification p-relative">
               <i class="fa-regular fa-bell fa-lg"></i>
             </span>
@@ -122,17 +135,17 @@
         </div>
         <!-- end head -->
         <h1 class="p-relative">Profile</h1>
-        <div class="profile-page m-20 ">
+        <div class="profile-page m-20">
           <!-- start overview -->
           <div class="overview d-flex align-center bg-white rad-10">
-            <div class="avatar-box txt-c p-15 ">
-              <img class="rad-half mb-10" src="images/avatar.png" alt="">
-              <h3 class="m-0 ">Osama Youseff</h3>
-              <span class="c-grey d-block mt-10 mb-10 ">Level 10</span>
-              <div class="level-bar  p-relative  ">
-                <span style="width:70%"></span>
+            <div class="avatar-box txt-c p-15">
+              <img class="rad-half mb-10" src="images/avatar.png" alt="" />
+              <h3 class="m-0">Osama Youseff</h3>
+              <span class="c-grey d-block mt-10 mb-10">Level 10</span>
+              <div class="level-bar p-relative">
+                <span style="width: 70%"></span>
               </div>
-              <div class="rating mt-10  mb-10 ">
+              <div class="rating mt-10 mb-10">
                 <i class="fa-solid fa-star c-orange fs-13"></i>
                 <i class="fa-solid fa-star c-orange fs-13"></i>
                 <i class="fa-solid fa-star c-orange fs-13"></i>
@@ -141,75 +154,79 @@
               </div>
               <p class="c-grey fs-13">120 Rating</p>
             </div>
-            <div class="info w-full ">
+            <div class="info w-full">
               <!--start general-information  -->
-              <div class="general-information txt-c-mobile between-flex p-20  ">
-                <div >
+              <div class="general-information txt-c-mobile between-flex p-20">
+                <div>
                   <h4 class="mt-10 mb-10 c-grey">General Information</h4>
-                  <p class="mt-10 mb-10">Full Name  <span> Osama Youseff</span></p>
+                  <p class="mt-10 mb-10">
+                    Full Name <span> Osama Youseff</span>
+                  </p>
                 </div>
-                <div class="pt-10 pb-10 ">
+                <div class="pt-10 pb-10">
                   Gender: <span class="c-black">Male</span>
                 </div>
-                <div class="pt-10 pb-10 ">
+                <div class="pt-10 pb-10">
                   Country:<span class="c-black">Egypt</span>
                 </div>
                 <label>
-                  <input class="toggle-checkbox" type="checkbox" checked >
+                  <input class="toggle-checkbox" type="checkbox" checked />
                   <div class="toggle-switch"></div>
                 </label>
               </div>
               <!--start general-information  -->
               <!--end general-information  -->
-              <div class="general-information txt-c-mobile between-flex p-20 ">
-                <div >
+              <div class="general-information txt-c-mobile between-flex p-20">
+                <div>
                   <h4 class="mt-10 mb-10 c-grey">Personal Information</h4>
-                  <p class="mt-10 mb-10">Email:  <span> o@nn.sa </span></p>
+                  <p class="mt-10 mb-10">Email: <span> o@nn.sa </span></p>
                 </div>
-                <div class="pt-10 pb-10 ">
+                <div class="pt-10 pb-10">
                   Phone: <span class="c-black">019123456789</span>
                 </div>
-                <div class="pt-10 pb-10 ">
+                <div class="pt-10 pb-10">
                   Date Of Birth:<span class="c-black">25/10/1982</span>
                 </div>
                 <label>
-                  <input class="toggle-checkbox" type="checkbox"  >
+                  <input class="toggle-checkbox" type="checkbox" />
                   <div class="toggle-switch"></div>
                 </label>
               </div>
               <!--end general-information  -->
               <!--start general-information  -->
-              <div class="general-information txt-c-mobile between-flex p-20 ">
-                <div >
+              <div class="general-information txt-c-mobile between-flex p-20">
+                <div>
                   <h4 class="mt-10 mb-10 c-grey">Job Information</h4>
-                  <p class="mt-10 mb-10">Title:   <span> Full Stack Developer</span></p>
+                  <p class="mt-10 mb-10">
+                    Title: <span> Full Stack Developer</span>
+                  </p>
                 </div>
-                <div class="pt-10 pb-10 ">
+                <div class="pt-10 pb-10">
                   Programming Language:<span class="c-black"> Python </span>
                 </div>
-                <div class="pt-10 pb-10 ">
+                <div class="pt-10 pb-10">
                   Years Of Experience:<span class="c-black"> 15+</span>
                 </div>
                 <label>
-                  <input class="toggle-checkbox" type="checkbox" checked >
+                  <input class="toggle-checkbox" type="checkbox" checked />
                   <div class="toggle-switch"></div>
                 </label>
               </div>
               <!--end general-information  -->
               <!--start general-information  -->
-              <div class="general-information txt-c-mobile between-flex p-20 ">
-                <div >
+              <div class="general-information txt-c-mobile between-flex p-20">
+                <div>
                   <h4 class="mt-10 mb-10 c-grey">Billing Information</h4>
                   <p class="mt-10 mb-10">Payment Method:<span>Paypal</span></p>
                 </div>
-                <div class="pt-10 pb-10 ">
-                  Email:  <span class="c-black">email@website.com </span>
+                <div class="pt-10 pb-10">
+                  Email: <span class="c-black">email@website.com </span>
                 </div>
-                <div class="pt-10 pb-10 ">
+                <div class="pt-10 pb-10">
                   Subscription:<span class="c-black"> Monthly</span>
                 </div>
                 <label>
-                  <input class="toggle-checkbox" type="checkbox" >
+                  <input class="toggle-checkbox" type="checkbox" />
                   <div class="toggle-switch"></div>
                 </label>
               </div>
@@ -219,82 +236,98 @@
           </div>
           <!-- end overview -->
           <!-- start other-data -->
-          <div class="other-data d-flex  rad-10 pt-20 pb-20 gap-20 txt-c-mobile ">
-            <div class="skills p-20 bg-white rad-10  ">
+          <div class="other-data d-flex rad-10 pt-20 pb-20 gap-20 txt-c-mobile">
+            <div class="skills p-20 bg-white rad-10">
               <h2 class="mt-0 mb-20">My Skills</h2>
-              <p class="mt-0 mb-20 " >Complete Skills List</p>
-              <div class="d-flex align-center gap-10  pt-15 pb-15  ">
-                <span class="btn-shape bg-eee ">HTML</span>
-                <span class="btn-shape bg-eee ">Pugjs</span>
-                <span class="btn-shape bg-eee ">HAML</span>
+              <p class="mt-0 mb-20">Complete Skills List</p>
+              <div class="d-flex align-center gap-10 pt-15 pb-15">
+                <span class="btn-shape bg-eee">HTML</span>
+                <span class="btn-shape bg-eee">Pugjs</span>
+                <span class="btn-shape bg-eee">HAML</span>
               </div>
-              <div class="d-flex align-center gap-10  pt-15 pb-15  ">
-                <span class="btn-shape bg-eee ">CSS</span>
-                <span class="btn-shape bg-eee ">SASSS</span>
-                <span class="btn-shape bg-eee ">tylus</span>
+              <div class="d-flex align-center gap-10 pt-15 pb-15">
+                <span class="btn-shape bg-eee">CSS</span>
+                <span class="btn-shape bg-eee">SASSS</span>
+                <span class="btn-shape bg-eee">tylus</span>
               </div>
-              <div class="d-flex align-center gap-10  pt-15 pb-15  ">
-                <span class="btn-shape bg-eee ">JavaScript</span>
-                <span class="btn-shape bg-eee ">TypeScript</span>
+              <div class="d-flex align-center gap-10 pt-15 pb-15">
+                <span class="btn-shape bg-eee">JavaScript</span>
+                <span class="btn-shape bg-eee">TypeScript</span>
               </div>
-              <div class="d-flex align-center gap-10  pt-15 pb-15  ">
-                <span class="btn-shape bg-eee ">Vuejs</span>
-                <span class="btn-shape bg-eee ">Reactjs</span>
+              <div class="d-flex align-center gap-10 pt-15 pb-15">
+                <span class="btn-shape bg-eee">Vuejs</span>
+                <span class="btn-shape bg-eee">Reactjs</span>
               </div>
-              <div class="d-flex align-center gap-10  pt-15 pb-15  ">
-                <span class="btn-shape bg-eee ">Jest</span>
-                <span class="btn-shape bg-eee ">Jasmine</span>
+              <div class="d-flex align-center gap-10 pt-15 pb-15">
+                <span class="btn-shape bg-eee">Jest</span>
+                <span class="btn-shape bg-eee">Jasmine</span>
               </div>
-              <div class="d-flex align-center gap-10  pt-15 pb-15  ">
-                <span class="btn-shape bg-eee ">PHP</span>
-                <span class="btn-shape bg-eee ">Laravel</span>
+              <div class="d-flex align-center gap-10 pt-15 pb-15">
+                <span class="btn-shape bg-eee">PHP</span>
+                <span class="btn-shape bg-eee">Laravel</span>
               </div>
-              <div class="d-flex align-center gap-10  pt-15  ">
-                <span class="btn-shape bg-eee ">Python</span>
-                <span class="btn-shape bg-eee ">Django</span>
+              <div class="d-flex align-center gap-10 pt-15">
+                <span class="btn-shape bg-eee">Python</span>
+                <span class="btn-shape bg-eee">Django</span>
               </div>
             </div>
-            <div class="last-activates p-20 bg-white rad-10 w-full ">
+            <div class="last-activates p-20 bg-white rad-10 w-full">
               <h2 class="mt-0 mb-20">Latest Activities</h2>
-              <p class="mt-0 mb-20 c-grey ">Latest Activities Done By The User</p>
-              <div class="d-flex d-flex align-center w-full block-mobile txt-c-mobile pt-20 pb-20 " >
-                <img class="mr-20" src="images/activity-01.png" alt="">
-                <div class="info block-mobile ">
-                  <p class="mb-10 ">Store</p>
-                  <span class="d-block c-grey ">Bought The Mastering Python Course</span>
+              <p class="mt-0 mb-20 c-grey">
+                Latest Activities Done By The User
+              </p>
+              <div
+                class="d-flex d-flex align-center w-full block-mobile txt-c-mobile pt-20 pb-20"
+              >
+                <img class="mr-20" src="images/activity-01.png" alt="" />
+                <div class="info block-mobile">
+                  <p class="mb-10">Store</p>
+                  <span class="d-block c-grey"
+                    >Bought The Mastering Python Course</span
+                  >
                 </div>
                 <div class="data">
                   <p class="mb-10">18:10</p>
                   <span class="d-block c-grey">Yesterday</span>
                 </div>
               </div>
-              <div class="d-flex d-flex align-center w-full block-mobile txt-c-mobile pt-20 pb-20 " >
-                <img class="mr-20" src="images/activity-02.png" alt="">
-                <div class="info block-mobile ">
-                  <p class="mb-10 ">Academy</p>
-                  <span class="d-block c-grey ">Got The PHP Certificate</span>
+              <div
+                class="d-flex d-flex align-center w-full block-mobile txt-c-mobile pt-20 pb-20"
+              >
+                <img class="mr-20" src="images/activity-02.png" alt="" />
+                <div class="info block-mobile">
+                  <p class="mb-10">Academy</p>
+                  <span class="d-block c-grey">Got The PHP Certificate</span>
                 </div>
                 <div class="data">
                   <p class="mb-10">16:05</p>
                   <span class="d-block c-grey">Yesterday</span>
                 </div>
               </div>
-              <div class="d-flex d-flex align-center w-full block-mobile txt-c-mobile pt-20 pb-20 " >
-                <img class="mr-20" src="images/activity-03.png" alt="">
-                <div class="info block-mobile ">
-                  <p class="mb-10 ">Badges</p>
-                  <span class="d-block c-grey ">Unlocked The 10 Skills Badge</span>
+              <div
+                class="d-flex d-flex align-center w-full block-mobile txt-c-mobile pt-20 pb-20"
+              >
+                <img class="mr-20" src="images/activity-03.png" alt="" />
+                <div class="info block-mobile">
+                  <p class="mb-10">Badges</p>
+                  <span class="d-block c-grey"
+                    >Unlocked The 10 Skills Badge</span
+                  >
                 </div>
                 <div class="data">
                   <p class="mb-10">18:05</p>
                   <span class="d-block c-grey">Yesterday</span>
                 </div>
               </div>
-              <div class="d-flex d-flex align-center w-full block-mobile txt-c-mobile pt-20  " >
-                <img class="mr-20" src="images/activity-01.png" alt="">
-                <div class="info block-mobile ">
-                  <p class="mb-10 ">Store</p>
-                  <span class="d-block c-grey ">Bought The Typescript Course</span>
+              <div
+                class="d-flex d-flex align-center w-full block-mobile txt-c-mobile pt-20"
+              >
+                <img class="mr-20" src="images/activity-01.png" alt="" />
+                <div class="info block-mobile">
+                  <p class="mb-10">Store</p>
+                  <span class="d-block c-grey"
+                    >Bought The Typescript Course</span
+                  >
                 </div>
                 <div class="data">
                   <p class="mb-10">12:05</p>
@@ -305,10 +338,10 @@
           </div>
           <!-- end other-data -->
         </div>
-        <!-- end page -->
+        <!-- end content -->
+      </div>
     </div>
-    <!-- end content -->
+    <!-- end page -->
+    <script src="main.js"></script>
   </body>
 </html>
-
-

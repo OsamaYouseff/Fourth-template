@@ -18,88 +18,98 @@
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Plans </title>
+    <title>Plans</title>
   </head>
   <body>
     <!-- start page -->
     <div class="page d-flex">
       <!-- start sidebar -->
       <div class="side-bar bg-white p-relative p-20">
-        <h3 class="p-relative p-20 txt-c mt-0">Osama</h3>
-        <ul>
-          <li>
-            <a
-              href="index.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-chart-bar fa-fw"></i>
-              <span>Dashboard</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="settings.html"
-              class="  c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-solid fa-gear fa-fw"></i>
-              <span>Settings</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="profile.html"
-              class=" c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-user fa-fw"></i>
-              <span>Profile</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="projects.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-solid fa-diagram-project fa-fw"></i>
-              <span>Projects</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="courses.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-solid fa-graduation-cap fa-fw"></i>
-              <span>Courses</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="friends.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-circle-user fa-fw"></i>
-              <span>Friends</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="files.html"
-              class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-file fa-fw"></i>
-              <span> Files</span>
-            </a>
-          </li>
-          <li>
-            <a
-              href="plans.html"
-              class="active c-black d-flex align-center fs-14 rad-6 p-10 m-0"
-            >
-              <i class="fa-regular fa-credit-card fa-fw"></i>
-              <span> Plans</span>
-            </a>
-          </li>
-        </ul>
+        <div class="wrapper">
+          <h3 class="p-relative p-20 txt-c mt-0">Osama</h3>
+          <ul>
+            <li>
+              <a
+                href="index.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-chart-bar fa-fw"></i>
+                <span>Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="settings.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-solid fa-gear fa-fw"></i>
+                <span>Settings</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="profile.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-user fa-fw"></i>
+                <span>Profile</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="projects.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-solid fa-diagram-project fa-fw"></i>
+                <span>Projects</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="courses.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                <span>Courses</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="friends.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-circle-user fa-fw"></i>
+                <span>Friends</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="files.html"
+                class="c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-file fa-fw"></i>
+                <span> Files</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="plans.html"
+                class="active c-black d-flex align-center fs-14 rad-6 p-10 m-0"
+              >
+                <i class="fa-regular fa-credit-card fa-fw"></i>
+                <span> Plans</span>
+              </a>
+            </li>
+          </ul>
+          <div class="main-switch">
+            <span>Dark</span>
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider" id="slider"></span>
+            </label>
+            <span>Light</span>
+          </div>
+        </div>
       </div>
       <!-- end sidebar -->
       <!-- start content -->
@@ -114,6 +124,9 @@
             />
           </div>
           <div class="icons d-flex align-center">
+            <!-- <div id="toggle">
+              <i class="fa-solid fa-moon"></i>
+            </div> -->
             <span class="notification p-relative">
               <i class="fa-regular fa-bell fa-lg"></i>
             </span>
@@ -122,13 +135,13 @@
         </div>
         <!-- end head -->
         <h1 class="p-relative">Plans</h1>
-        <div class="plans-page m-20 d-grid gap-20 ">
-          <div class=" green plan-card bg-white rad-6 p-relative p-15 ">
-            <div class="main-title txt-c p-20 mb-20  ">
-              <span class="mt-0  ">Free</span>
-              <span class="d-block "><sup>$</sup>0.00</span>
+        <div class="plans-page m-20 d-grid gap-20">
+          <div class="green plan-card bg-white rad-6 p-relative p-15">
+            <div class="main-title txt-c p-20 mb-20">
+              <span class="mt-0">Free</span>
+              <span class="d-block"><sup>$</sup>0.00</span>
             </div>
-            <ul class="features ">
+            <ul class="features">
               <li>
                 <i class="fa-solid fa-check fa-fw yes"></i>
                 <span>Access All Text Lessons</span>
@@ -175,12 +188,16 @@
                 <i class="fa-solid fa-circle-info help"></i>
               </li>
             </ul>
-            <a class = "btn-shape bg-green c-white d-block w-fit  mt-10 mb-0  "href="#">Join</a>
+            <a
+              class="btn-shape bg-green c-white d-block w-fit mt-10 mb-0"
+              href="#"
+              >Join</a
+            >
           </div>
-          <div class=" blue plan-card bg-white rad-6 p-relative p-15 ">
-            <div class="main-title txt-c p-20 mb-20  ">
-              <span class="mt-0  ">Basic</span>
-              <span class="d-block "><sup>$</sup>7.99</span>
+          <div class="blue plan-card bg-white rad-6 p-relative p-15">
+            <div class="main-title txt-c p-20 mb-20">
+              <span class="mt-0">Basic</span>
+              <span class="d-block"><sup>$</sup>7.99</span>
             </div>
             <ul class="features">
               <li>
@@ -229,14 +246,18 @@
                 <i class="fa-solid fa-circle-info help"></i>
               </li>
             </ul>
-            <a class = "btn-shape bg-blue c-white d-block w-fit  mt-10 mb-0  "href="#">Join</a>
+            <a
+              class="btn-shape bg-blue c-white d-block w-fit mt-10 mb-0"
+              href="#"
+              >Join</a
+            >
           </div>
-          <div class=" orange plan-card bg-white rad-6 p-relative p-15 ">
-            <div class="main-title txt-c p-20 mb-20  ">
-              <span class="mt-0  ">Premium</span>
-              <span class="d-block "><sup>$</sup>19.99</span>
+          <div class="orange plan-card bg-white rad-6 p-relative p-15">
+            <div class="main-title txt-c p-20 mb-20">
+              <span class="mt-0">Premium</span>
+              <span class="d-block"><sup>$</sup>19.99</span>
             </div>
-            <ul class="m-0  features">
+            <ul class="m-0 features">
               <li>
                 <i class="fa-solid fa-check fa-fw yes"></i>
                 <span>Access All Text Lessons</span>
@@ -283,11 +304,15 @@
                 <i class="fa-solid fa-circle-info help"></i>
               </li>
             </ul>
-            <a class = " c-grey d-block txt-c  mt-10 mb-0  "href="#">This Is Your Current Plan</a>
+            <a class="c-grey d-block txt-c mt-10 mb-0" href="#"
+              >This Is Your Current Plan</a
+            >
           </div>
         </div>
-        <!-- end page -->
+        <!-- end content -->
+      </div>
+      <!-- end page -->
     </div>
-    <!-- end content -->
+    <script src="main.js"></script>
   </body>
 </html>
